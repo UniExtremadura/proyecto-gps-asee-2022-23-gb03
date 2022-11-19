@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="@string/icon_partidos"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_partidos"
+        />
+    <item
+        android:title="@string/icon_fav"
+        android:id="@+id/nav_fav"
+        android:icon="@drawable/ic_favoritos"
+        />
+    <item
+        android:title="@string/icon_clasificacion"
+        android:id="@+id/nav_table"
+        android:icon="@drawable/ic_clasificacion"
+        />
+    <item
+        android:title="@string/icon_perfil"
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_perfil"
+        />
+</menu>
