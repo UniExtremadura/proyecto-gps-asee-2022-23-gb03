@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="icon_fav">Favourites</string>
-    <string name="app_name">Golaso</string>
-    <string name="icon_clasificacion">Table</string>
-    <string name="icon_perfil">Profile</string>
-    <string name="icon_partidos">Matches</string>
-</resources>
