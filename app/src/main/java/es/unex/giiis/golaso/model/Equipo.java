@@ -1,7 +1,9 @@
 package es.unex.giiis.golaso.model;
-import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+
+import javax.annotation.Generated;
 
 @Generated("jsonschema2pojo")
 public class Equipo {
@@ -9,42 +11,66 @@ public class Equipo {
     @SerializedName("Entrenador")
     @Expose
     private String entrenador;
+
     @SerializedName("Estadio")
     @Expose
     private String estadio;
+
     @SerializedName("GC")
     @Expose
     private Integer gc;
+
     @SerializedName("GF")
     @Expose
     private Integer gf;
+
     @SerializedName("Nombre")
     @Expose
     private String nombre;
+
     @SerializedName("PE")
     @Expose
     private Integer pe;
+
     @SerializedName("PG")
     @Expose
     private Integer pg;
+
     @SerializedName("PJ")
     @Expose
     private Integer pj;
+
     @SerializedName("PP")
     @Expose
     private Integer pp;
+
     @SerializedName("PT")
     @Expose
     private Integer pt;
+
     @SerializedName("Posicion")
     @Expose
     private Integer posicion;
+
+    @SerializedName("PosicionAcesso")
+    @Expose
+    private String posicionAcesso;
+
     @SerializedName("Ubicacion")
     @Expose
     private String ubicacion;
+
     @SerializedName("id_equipo")
     @Expose
     private Integer idEquipo;
+
+    @SerializedName("Logo")
+    @Expose
+    private String logo;
+
+    public String getLogo() { return logo;}
+
+    public void setLogo(String logo) { this.logo = logo; }
 
     public String getEntrenador() {
         return entrenador;
@@ -134,6 +160,14 @@ public class Equipo {
         this.posicion = posicion;
     }
 
+    public String getPosicionAcesso() {
+        return posicionAcesso;
+    }
+
+    public void setPosicionAcesso(String posicionAcesso) {
+        this.posicionAcesso = posicionAcesso;
+    }
+
     public String getUbicacion() {
         return ubicacion;
     }
@@ -149,4 +183,5 @@ public class Equipo {
     public void setIdEquipo(Integer idEquipo) {
         this.idEquipo = idEquipo;
     }
+
 }

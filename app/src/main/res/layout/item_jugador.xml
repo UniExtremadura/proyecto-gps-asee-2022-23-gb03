@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jugadorItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textViewNombreJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/nombreEquipoJugadorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewNombreJugador"
+        android:layout_marginTop="8dp"
+        android:text="@string/team"/>
+
+    <TextView
+        android:id="@+id/textViewEquipoJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nombreEquipoJugadorLabel"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/nombreEquipoJugadorLabel" />
+
+    <TextView
+        android:id="@+id/posicionJugadorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nombreEquipoJugadorLabel"
+        android:layout_marginTop="8dp"
+        android:text="@string/playerPos"/>
+
+    <TextView
+        android:id="@+id/textViewposicionJugador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/posicionJugadorLabel"
+        android:layout_marginStart="3dp"
+        android:layout_toEndOf="@+id/posicionJugadorLabel" />
+
+    <View
+        android:id="@+id/itemJugadorDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@+id/posicionJugadorLabel"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

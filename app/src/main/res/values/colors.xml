@@ -13,4 +13,5 @@
     <color name="green4">#51ac8c</color>
     <color name="background">#bfcfc0</color>
     <color name="statusBar">#2d3751 </color>
+    <color name="darkBlue">#0A0E29</color>
 </resources>

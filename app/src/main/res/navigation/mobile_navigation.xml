@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_home">
+    app:startDestination="@id/nav_login">
 
     <fragment
         android:id="@+id/nav_home"
@@ -15,14 +15,44 @@
         android:name="es.unex.giiis.golaso.ui.favoritos.FavoritosFragment"
         android:label="@string/icon_fav"
         tools:layout="@layout/fragment_favoritos" />
-    <fragment
-        android:id="@+id/nav_profile"
-        android:name="es.unex.giiis.golaso.ui.perfil.PerfilFragment"
-        android:label="@string/icon_perfil"
-        tools:layout="@layout/fragment_perfil" />
+
     <fragment
         android:id="@+id/nav_table"
         android:name="es.unex.giiis.golaso.ui.clasificacion.ClasificacionFragment"
         android:label="@string/icon_clasificacion"
         tools:layout="@layout/fragment_clasificacion" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="es.unex.giiis.golaso.ui.perfil.LoginFragment"
+        android:label="@string/icon_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="es.unex.giiis.golaso.ui.perfil.PerfilFragment"
+        android:label="@string/icon_perfil"
+        tools:layout="@layout/fragment_perfil">
+        <action
+            android:id="@+id/action_nav_profile_to_nav_login"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_nav_profile_to_nav_modificar_perfil"
+            app:destination="@id/nav_modificar_perfil" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_modificar_perfil"
+        android:name="es.unex.giiis.golaso.ui.perfil.ModificarPerfilFragment"
+        android:label="@string/icon_modificar_perfil"
+        tools:layout="@layout/fragment_modificar_perfil">
+        <action
+            android:id="@+id/action_nav_modificar_perfil_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
+
 </navigation>
