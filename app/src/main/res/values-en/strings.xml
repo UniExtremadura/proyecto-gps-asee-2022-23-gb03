@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_fav">Favourites</string>
+    <string name="app_name">Golaso</string>
+    <string name="icon_clasificacion">Table</string>
+    <string name="icon_perfil">Profile</string>
+    <string name="icon_partidos">Matches</string>
+    <string name="title_search">Search</string>
+    <string name="title_fav">Favourites</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_clasificaction">Clasification</string>
+    <string name="teams">Teams</string>
+    <string name="players">Players</string>
+    <string name="results">Results</string>
+    <string name="TopScorers">Scorers</string>
+    <string name="coach">Coach:</string>
+    <string name="rank">Rank:</string>
+    <string name="team">Team:</string>
+    <string name="stadium">Stadium:</string>
+    <string name="accesPos">" Access position:"</string>
+    <string name="team_details">Team details</string>
+    <string name="statistics">Team stats</string>
+    <string name="gc">Goals against:</string>
+    <string name="gf">Goals for:</string>
+    <string name="pe">Draws:</string>
+    <string name="pg">Victories:</string>
+    <string name="pj">" Matches played:"</string>
+    <string name="pp">Defeats:</string>
+    <string name="pt">Score:</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="commentTittle">New comment</string>
+    <string name="share">Share</string>
+    <string name="myFavs">Favourites</string>
+    <string name="sTeamList">Search team</string>
+    <string name="sPlayerList">Search player</string>
+    <string name="playerPos">Position:</string>
+    <string name="player">Player name</string>
+    <string name="Team">Team name</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="icon_login">Login</string>
+    <string name="icon_modificar_perfil">Modify profile</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
