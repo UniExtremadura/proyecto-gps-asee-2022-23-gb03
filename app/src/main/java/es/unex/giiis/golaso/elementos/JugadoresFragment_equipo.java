@@ -28,12 +28,12 @@ public class JugadoresFragment_equipo extends Fragment implements JugadorEquipoA
     private FragmentJugadoresEquipoBinding binding;
 
     private static final String ARG_PARAM1 = "idEquipo";
-    private int mIdEquipo;
+    private long mIdEquipo;
 
-    public static JugadoresFragment_equipo newInstance(int idEquipo) {
+    public static JugadoresFragment_equipo newInstance(long idEquipo) {
         JugadoresFragment_equipo fragment = new JugadoresFragment_equipo();
         Bundle args = new Bundle();
-        args.putInt(ARG_PARAM1, idEquipo);
+        args.putLong(ARG_PARAM1, idEquipo);
         fragment.setArguments(args);
         return fragment;
     }
@@ -42,7 +42,7 @@ public class JugadoresFragment_equipo extends Fragment implements JugadorEquipoA
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mIdEquipo = getArguments().getInt(ARG_PARAM1);
+            mIdEquipo = getArguments().getLong(ARG_PARAM1);
         }
     }
 

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Sobre el teléfono">
+        <Preference
+            android:key="Versión_Android"
+            android:title="Versión de Android"
+            android:summary="V8.1 (Oreo)"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Contáctanos">
+        <Preference
+            android:key="Gmail"
+            android:title="Correo electrónico"
+            android:summary="Para cualquier duda: gpsaseeb03@gmail.com">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://www.google.com/intl/es/gmail/about/" />
+        </Preference>
+
+        <Preference
+            android:key="movil"
+            android:title="Teléfono móvil">
+            <intent
+                android:action="android.intent.action.DIAL"
+                android:data="tel:827365432" />
+        </Preference>
+
+        <Preference
+            android:key="mensaje"
+            android:title="Enviar un SMS">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="tel:827365432" />
+        </Preference>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Elegir modo día/modo nocturno">
+        <ListPreference
+            android:key="@string/settings_theme_key"
+            android:title="@string/settings_theme_title"
+            android:icon="@drawable/baseline_settings_brightness_24"
+            android:dialogTitle="@string/settings_theme_dialog_title"
+            android:entries="@array/settings_theme_entries"
+            android:entryValues="@array/settings_theme_values"
+            android:summary="%s"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

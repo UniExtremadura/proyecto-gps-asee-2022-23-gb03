@@ -9,12 +9,16 @@ import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.core.graphics.drawable.RoundedBitmapDrawable;
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
 import androidx.fragment.app.Fragment;
@@ -48,12 +52,12 @@ public class EquipoDetailFragment extends Fragment implements FragmentManager.On
     private String mEstadio;
     private String mEntrenador;
     private String mLogo;
-    private int mId;
+    private long mId;
 
     private Equipo mEquipo;
 
     public static EquipoDetailFragment newInstance(String nombre, String ubicacion, String estadio,
-                                                   String entrenador, String logo, int id) {
+                                                   String entrenador, String logo, long id) {
 
         EquipoDetailFragment fragment = new EquipoDetailFragment();
         Bundle args = new Bundle();
@@ -63,7 +67,7 @@ public class EquipoDetailFragment extends Fragment implements FragmentManager.On
         args.putString(ARG_PARAM3, estadio);
         args.putString(ARG_PARAM4, entrenador);
         args.putString(ARG_PARAM5, logo);
-        args.putInt(ARG_PARAM6, id);
+        args.putLong(ARG_PARAM6, id);
 
         fragment.setArguments(args);
 
@@ -81,7 +85,7 @@ public class EquipoDetailFragment extends Fragment implements FragmentManager.On
         args.putString(ARG_PARAM3, equipo.getEstadio());
         args.putString(ARG_PARAM4, equipo.getEntrenador());
         args.putString(ARG_PARAM5, equipo.getLogo());
-        args.putInt(ARG_PARAM6, equipo.getIdEquipo());
+        args.putLong(ARG_PARAM6, equipo.getIdEquipo());
 
         fragment.setArguments(args);
 
@@ -101,7 +105,7 @@ public class EquipoDetailFragment extends Fragment implements FragmentManager.On
             mEstadio = getArguments().getString(ARG_PARAM3);
             mEntrenador = getArguments().getString(ARG_PARAM4);
             mLogo = getArguments().getString(ARG_PARAM5);
-            mId = getArguments().getInt(ARG_PARAM6);
+            mId = getArguments().getLong(ARG_PARAM6);
 
             mEquipo = new Equipo(mId, mNombre, mEntrenador, mEstadio, mUbicacion, mLogo);
 

@@ -7,6 +7,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,11 +32,13 @@ public class JugadorEquipoAdapter extends RecyclerView.Adapter<JugadorEquipoAdap
     Context context;
     List<Jugador> jugadores;
     List<Jugador> jugadoresEquipo;
-    private final int idEquipo;
-    SwitchCompat mSwitch;
+    private final long idEquipo;
+
+    //boton switch
+
     private ItemClickListener clickListener;
 
-    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, int idEquipo, SwitchCompat mSwitch, ItemClickListener clickListener) {
+    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, long idEquipo, ItemClickListener clickListener) {
         this.context = context;
         this.jugadores = responseList;
         this.jugadoresEquipo = new ArrayList<>();
@@ -44,7 +48,7 @@ public class JugadorEquipoAdapter extends RecyclerView.Adapter<JugadorEquipoAdap
     }
 
     //busca los jugadores del equipo y los ordena por nombre
-    private void buscarJugadoresEquipo(int idEquipo) {
+    private void buscarJugadoresEquipo(long idEquipo) {
 
         for (Jugador j:jugadores) {
             if (j.getIdEquipo() == idEquipo) {

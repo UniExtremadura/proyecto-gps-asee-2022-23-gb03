@@ -28,9 +28,9 @@ public class ResultadoEquipoAdapter extends RecyclerView.Adapter<ResultadoEquipo
     List<Equipo> equipos;
     List<Partido> partidosEquipo;
     Equipo equipo;
-    int idEquipo;
+    long idEquipo;
 
-    public ResultadoEquipoAdapter(Context context, List<Partido> partidosList, List<Equipo> equiposList, int id) {
+    public ResultadoEquipoAdapter(Context context, List<Partido> partidosList, List<Equipo> equiposList, long id) {
         this.context = context;
         this.partidos = partidosList;
         this.equipos = equiposList;
@@ -134,7 +134,7 @@ public class ResultadoEquipoAdapter extends RecyclerView.Adapter<ResultadoEquipo
         return partidosEquipo.size();
     }
 
-    private Equipo buscarEquipoPorId(int id) {
+    private Equipo buscarEquipoPorId(long id) {
 
         boolean enc = false;
         Equipo e = null;
