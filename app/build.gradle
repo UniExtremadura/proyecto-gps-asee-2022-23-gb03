@@ -68,4 +68,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
+
 }
