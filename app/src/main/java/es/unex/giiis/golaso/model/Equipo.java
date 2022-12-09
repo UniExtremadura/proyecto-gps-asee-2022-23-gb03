@@ -8,6 +8,18 @@ import javax.annotation.Generated;
 @Generated("jsonschema2pojo")
 public class Equipo {
 
+    public Equipo(Integer mId, String mNombre, String mEntrenador, String mEstadio,
+                  String mUbicacion, String mLogo) {
+
+        this.idEquipo = mId;
+        this.nombre = mNombre;
+        this.entrenador = mEntrenador;
+        this.estadio = mEstadio;
+        this.ubicacion = mUbicacion;
+        this.logo = mLogo;
+
+    }
+
     @SerializedName("Entrenador")
     @Expose
     private String entrenador;
