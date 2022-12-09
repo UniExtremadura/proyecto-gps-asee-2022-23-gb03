@@ -4,30 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.clasificacion.ResultadosFragment_clasificacion">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rVJornada"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:clipToPadding="false"
-            />
-
-    </LinearLayout>
+    android:background="@color/background"
+    tools:context=".elementos.ResultadosFragment_equipo">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <FrameLayout
+            android:id="@+id/SeparadorPartidoEq"
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+            android:background="@color/white" >
+        </FrameLayout>
+
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rVPartidos"
+            android:id="@+id/rVPartidosEquipo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
