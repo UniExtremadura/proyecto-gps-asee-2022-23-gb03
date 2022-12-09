@@ -8,8 +8,56 @@ import javax.annotation.Generated;
 @Generated("jsonschema2pojo")
 public class Jugador {
 
-    public Jugador(Integer mId, String mNombre, String mEquipo, String mPosicion, Integer mGoles,
-                   Integer mAsistencias, Integer mEdad, Integer mFechaNacimiento, Integer mPartidos,
+    @SerializedName("asistencias")
+    @Expose
+    private long asistencias;
+
+    @SerializedName("edad")
+    @Expose
+    private long edad;
+
+    @SerializedName("equipo")
+    @Expose
+    private String equipo;
+
+    @SerializedName("fecha_nac")
+    @Expose
+    private long añoNac;
+
+    @SerializedName("goles")
+    @Expose
+    private long goles;
+
+    @SerializedName("id_equipo")
+    @Expose
+    private long idEquipo;
+
+    @SerializedName("id_jugador")
+    @Expose
+    private long idJugador;
+
+    @SerializedName("nombre")
+    @Expose
+    private String nombre;
+
+    @SerializedName("pais")
+    @Expose
+    private String pais;
+
+    @SerializedName("pj")
+    @Expose
+    private long partidosJugados;
+
+    @SerializedName("posicion")
+    @Expose
+    private String posicion;
+
+    @SerializedName("foto")
+    @Expose
+    private String foto;
+
+    public Jugador(long mId, String mNombre, String mEquipo, String mPosicion, long mGoles,
+                   long mAsistencias, long mEdad, long mFechaNacimiento, long mPartidos,
                    String mPais, String mFoto) {
 
         this.idJugador = mId;
@@ -26,75 +74,19 @@ public class Jugador {
 
     }
 
-    @SerializedName("asistencias")
-    @Expose
-    private Integer asistencias;
-
-    @SerializedName("edad")
-    @Expose
-    private Integer edad;
-
-    @SerializedName("equipo")
-    @Expose
-    private String equipo;
-
-    @SerializedName("fecha_nac")
-    @Expose
-    private Integer añoNac;
-
-    @SerializedName("goles")
-    @Expose
-    private Integer goles;
-
-    @SerializedName("id_equipo")
-    @Expose
-    private Integer idEquipo;
-
-    @SerializedName("id_jugador")
-    @Expose
-    private Integer idJugador;
-
-    @SerializedName("nombre")
-    @Expose
-    private String nombre;
-
-    @SerializedName("pais")
-    @Expose
-    private String pais;
-
-    @SerializedName("pj")
-    @Expose
-    private Integer partidosJugados;
-
-    @SerializedName("posicion")
-    @Expose
-    private String posicion;
-
-    @SerializedName("foto")
-    @Expose
-    private String foto;
-
-    public String getFoto() {
-        return foto;
-    }
-
-    public void setFoto(String foto) {
-        this.foto = foto;
-    }
-
-    public Integer getAsistencias() {
+    public long getAsistencias() {
         return asistencias;
     }
 
-    public void setAsistencias(Integer asistencias) {
+    public void setAsistencias(long asistencias) {
         this.asistencias = asistencias;
     }
 
-    public Integer getEdad() {
+    public long getEdad() {
         return edad;
     }
 
-    public void setEdad(Integer edad) {
+    public void setEdad(long edad) {
         this.edad = edad;
     }
 
@@ -108,35 +100,35 @@ public class Jugador {
         this.equipo = equipo;
     }
 
-    public Integer getAñoNac() {
+    public long getAñoNac() {
         return añoNac;
     }
 
-    public void setAñoNac(Integer añoNac) {
+    public void setAñoNac(long añoNac) {
         this.añoNac = añoNac;
     }
 
-    public Integer getGoles() {
+    public long getGoles() {
         return goles;
     }
 
-    public void setGoles(Integer goles) {
+    public void setGoles(long goles) {
         this.goles = goles;
     }
 
-    public Integer getIdEquipo() {
+    public long getIdEquipo() {
         return idEquipo;
     }
 
-    public void setIdEquipo(Integer idEquipo) {
+    public void setIdEquipo(long idEquipo) {
         this.idEquipo = idEquipo;
     }
 
-    public Integer getIdJugador() {
+    public long getIdJugador() {
         return idJugador;
     }
 
-    public void setIdJugador(Integer idJugador) {
+    public void setIdJugador(long idJugador) {
         this.idJugador = idJugador;
     }
 
@@ -156,11 +148,11 @@ public class Jugador {
         this.pais = pais;
     }
 
-    public Integer getPartidosJugados() {
+    public long getPartidosJugados() {
         return partidosJugados;
     }
 
-    public void setPartidosJugados(Integer partidosJugados) {
+    public void setPartidosJugados(long partidosJugados) {
 
         this.partidosJugados = partidosJugados;
 
@@ -172,6 +164,18 @@ public class Jugador {
 
     public void setPosicion(String posicion) {
         this.posicion = posicion;
+    }
+
+    public String getFoto() {
+
+        return foto;
+
+    }
+
+    public void setFoto(String foto) {
+
+        this.foto = foto;
+
     }
 
 }

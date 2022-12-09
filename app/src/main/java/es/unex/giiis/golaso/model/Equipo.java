@@ -8,18 +8,6 @@ import javax.annotation.Generated;
 @Generated("jsonschema2pojo")
 public class Equipo {
 
-    public Equipo(Integer mId, String mNombre, String mEntrenador, String mEstadio,
-                  String mUbicacion, String mLogo) {
-
-        this.idEquipo = mId;
-        this.nombre = mNombre;
-        this.entrenador = mEntrenador;
-        this.estadio = mEstadio;
-        this.ubicacion = mUbicacion;
-        this.logo = mLogo;
-
-    }
-
     @SerializedName("Entrenador")
     @Expose
     private String entrenador;
@@ -30,11 +18,11 @@ public class Equipo {
 
     @SerializedName("GC")
     @Expose
-    private Integer gc;
+    private long gc;
 
     @SerializedName("GF")
     @Expose
-    private Integer gf;
+    private long gf;
 
     @SerializedName("Nombre")
     @Expose
@@ -42,27 +30,27 @@ public class Equipo {
 
     @SerializedName("PE")
     @Expose
-    private Integer pe;
+    private long pe;
 
     @SerializedName("PG")
     @Expose
-    private Integer pg;
+    private long pg;
 
     @SerializedName("PJ")
     @Expose
-    private Integer pj;
+    private long pj;
 
     @SerializedName("PP")
     @Expose
-    private Integer pp;
+    private long pp;
 
     @SerializedName("PT")
     @Expose
-    private Integer pt;
+    private long pt;
 
     @SerializedName("Posicion")
     @Expose
-    private Integer posicion;
+    private long posicion;
 
     @SerializedName("PosicionAcesso")
     @Expose
@@ -74,11 +62,47 @@ public class Equipo {
 
     @SerializedName("id_equipo")
     @Expose
-    private Integer idEquipo;
+    private long idEquipo;
 
     @SerializedName("Logo")
     @Expose
     private String logo;
+
+    public Equipo(long mId, String mNombre, String mEntrenador, String mEstadio,
+                  String mUbicacion, String mLogo) {
+
+        this.idEquipo = mId;
+        this.nombre = mNombre;
+        this.entrenador = mEntrenador;
+        this.estadio = mEstadio;
+        this.ubicacion = mUbicacion;
+        this.logo = mLogo;
+
+    }
+
+    public Equipo(long mId, String mNombre, String mEntrenador, String mEstadio,
+                  String mUbicacion, String mLogo, String mPosicionAcesso, long mPosicion,
+                  long mGolesFavor, long mGolesContra, long mPartidosJugados,
+                  long mPartidosGanados, long mPartidosEmpatados, long mPartidosPerdidos,
+                    long mPuntos) {
+
+        this.idEquipo = mId;
+        this.nombre = mNombre;
+        this.entrenador = mEntrenador;
+        this.estadio = mEstadio;
+        this.ubicacion = mUbicacion;
+        this.logo = mLogo;
+        this.posicionAcesso = mPosicionAcesso;
+        this.posicion = mPosicion;
+        this.gf = mGolesFavor;
+        this.gc = mGolesContra;
+        this.pj = mPartidosJugados;
+        this.pg = mPartidosGanados;
+        this.pe = mPartidosEmpatados;
+        this.pp = mPartidosPerdidos;
+        this.pt = mPuntos;
+
+    }
 
     public String getLogo() { return logo;}
 
@@ -100,19 +124,19 @@ public class Equipo {
         this.estadio = estadio;
     }
 
-    public Integer getGc() {
+    public long getGc() {
         return gc;
     }
 
-    public void setGc(Integer gc) {
+    public void setGc(long gc) {
         this.gc = gc;
     }
 
-    public Integer getGf() {
+    public long getGf() {
         return gf;
     }
 
-    public void setGf(Integer gf) {
+    public void setGf(long gf) {
         this.gf = gf;
     }
 
@@ -124,51 +148,51 @@ public class Equipo {
         this.nombre = nombre;
     }
 
-    public Integer getPe() {
+    public long getPe() {
         return pe;
     }
 
-    public void setPe(Integer pe) {
+    public void setPe(long pe) {
         this.pe = pe;
     }
 
-    public Integer getPg() {
+    public long getPg() {
         return pg;
     }
 
-    public void setPg(Integer pg) {
+    public void setPg(long pg) {
         this.pg = pg;
     }
 
-    public Integer getPj() {
+    public long getPj() {
         return pj;
     }
 
-    public void setPj(Integer pj) {
+    public void setPj(long pj) {
         this.pj = pj;
     }
 
-    public Integer getPp() {
+    public long getPp() {
         return pp;
     }
 
-    public void setPp(Integer pp) {
+    public void setPp(long pp) {
         this.pp = pp;
     }
 
-    public Integer getPt() {
+    public long getPt() {
         return pt;
     }
 
-    public void setPt(Integer pt) {
+    public void setPt(long pt) {
         this.pt = pt;
     }
 
-    public Integer getPosicion() {
+    public long getPosicion() {
         return posicion;
     }
 
-    public void setPosicion(Integer posicion) {
+    public void setPosicion(long posicion) {
         this.posicion = posicion;
     }
 
@@ -188,12 +212,13 @@ public class Equipo {
         this.ubicacion = ubicacion;
     }
 
-    public Integer getIdEquipo() {
+    public long getIdEquipo() {
         return idEquipo;
     }
 
-    public void setIdEquipo(Integer idEquipo) {
+    public void setIdEquipo(long idEquipo) {
         this.idEquipo = idEquipo;
     }
+
 
 }
