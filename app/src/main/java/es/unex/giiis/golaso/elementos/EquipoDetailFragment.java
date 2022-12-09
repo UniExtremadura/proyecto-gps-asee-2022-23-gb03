@@ -33,13 +33,6 @@ import es.unex.giiis.golaso.R;
 import es.unex.giiis.golaso.databinding.FragmentEquipoDetailBinding;
 import es.unex.giiis.golaso.model.Equipo;
 
-public class EquipoDetailFragment extends Fragment {
-import es.unex.giiis.golaso.MainActivity;
-import es.unex.giiis.golaso.R;
-import es.unex.giiis.golaso.databinding.FragmentEquipoDetailBinding;
-import es.unex.giiis.golaso.model.Equipo;
-import es.unex.giiis.golaso.ui.clasificacion.ClasificacionFragment;
-
 public class EquipoDetailFragment extends Fragment implements FragmentManager.OnBackStackChangedListener {
 
     private static final String ARG_PARAM1 = "nombre";
