@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/nav_home">
+    app:startDestination="@id/nav_login">
 
     <fragment
         android:id="@+id/nav_home"
@@ -33,5 +33,15 @@
         android:name="es.unex.giiis.golaso.ui.buscar.BuscarFragment"
         android:label="@string/icon_buscar"
         tools:layout="@layout/fragment_buscar"/>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="es.unex.giiis.golaso.ui.perfil.LoginFragment"
+        android:label="@string/icon_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_nav_login_to_nav_profile"
+            app:destination="@id/nav_profile" />
+    </fragment>
 
 </navigation>
