@@ -21,9 +21,6 @@ public class ResultadosFragment_clasificacion extends Fragment {
         binding = FragmentResultadosClasificacionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textResultadosClasificacion;
-        textView.setText("Este es el ResultadosFragmentClasificacion");
-
         return root;
 
     }
