@@ -36,7 +36,7 @@ public class TestCU05_BuscarJugador {
             new ActivityScenarioRule<>(MainActivity.class);
 
     @Test
-    public void testCU05_BuscarJugador() {
+    public void testCU05_BuscarJugador() throws InterruptedException {
         ViewInteraction appCompatEditText = onView(
                 allOf(withId(R.id.edit_user),
                         childAtPosition(
@@ -66,7 +66,7 @@ public class TestCU05_BuscarJugador {
                                 2),
                         isDisplayed()));
         materialButton.perform(click());
-
+        Thread.sleep(1000);
         ViewInteraction bottomNavigationItemView = onView(
                 allOf(withId(R.id.nav_buscar), withContentDescription("Search"),
                         childAtPosition(
@@ -76,6 +76,7 @@ public class TestCU05_BuscarJugador {
                                 2),
                         isDisplayed()));
         bottomNavigationItemView.perform(click());
+        Thread.sleep(1000);
 
         ViewInteraction searchAutoComplete = onView(
                 allOf(withId(com.bumptech.glide.R.id.search_src_text),
