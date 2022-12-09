@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -21,6 +22,8 @@ import es.unex.giiis.golaso.api.jugadores.JugadoresNetworkLoaderRunnable;
 import es.unex.giiis.golaso.databinding.FragmentGoleadoresClasificacionBinding;
 import es.unex.giiis.golaso.elementos.JugadorDetailFragment;
 import es.unex.giiis.golaso.model.Jugador;
+import es.unex.giiis.golaso.model.Jugador;
+
 
 public class GoleadoresFragment_clasificacion extends Fragment implements GoleadorAdapter.ItemClickListener {
 
