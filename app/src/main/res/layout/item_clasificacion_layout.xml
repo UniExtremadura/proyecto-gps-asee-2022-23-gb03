@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="3"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableRow
+        android:id="@+id/itemRow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/tVPos"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginLeft="10dp"
+            android:paddingHorizontal="5dp"
+            android:text="POS"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/iVEscudoEquipo"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tVNombreEquipo"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:text="EQUIPO"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tVPartidos"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:text="PJ"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tVGoles"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:text="G"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tVPuntos"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_column="6"
+            android:text="PT"
+            android:layout_marginEnd="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/SeparadorFila"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <FrameLayout
+            android:id="@+id/LineaCabecera"
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:layout_span="7"
+            android:background="@color/black" >
+        </FrameLayout>
+    </TableRow>
+
+</TableLayout>
