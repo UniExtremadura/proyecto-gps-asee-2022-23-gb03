@@ -3,15 +3,25 @@
   <component name="AndroidTestResultsUserPreferences">
     <option name="androidTestResultsTableState">
       <map>
-        <entry key="1552257435">
+        <entry key="-1214832461">
           <value>
             <AndroidTestResultsTableState>
               <option name="preferredColumnWidths">
                 <map>
+                  <entry key="9WVDU19112000694" value="120" />
                   <entry key="Duration" value="90" />
-                  <entry key="R52R50C7YKT" value="120" />
+                  <entry key="HUAWEI&#10; ANE-LX1" value="120" />
                   <entry key="Tests" value="360" />
-                  <entry key="samsung&#10; SM-P610" value="120" />
+                </map>
+              </option>
+            </AndroidTestResultsTableState>
+          </value>
+        </entry>
+        <entry key="444387385">
+          <value>
+            <AndroidTestResultsTableState>
+              <option name="preferredColumnWidths">
+                <map>
                   <entry key="9WVDU19112000694" value="120" />
                   <entry key="Duration" value="90" />
                   <entry key="HUAWEI&#10; ANE-LX1" value="120" />
