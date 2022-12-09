@@ -20,9 +20,6 @@ public class GoleadoresFragment_clasificacion extends Fragment {
         binding = FragmentGoleadoresClasificacionBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textGoleadoresClasificacion;
-        textView.setText("Este es el GoleadoresFragmentClasificacion");
-
         return root;
     }
 
