@@ -34,11 +34,11 @@ public class JugadorEquipoAdapter extends RecyclerView.Adapter<JugadorEquipoAdap
     List<Jugador> jugadoresEquipo;
     private final long idEquipo;
 
-    //boton switch
+    SwitchCompat mSwitch;
 
     private ItemClickListener clickListener;
 
-    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, long idEquipo, ItemClickListener clickListener) {
+    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, long idEquipo, SwitchCompat mSwitch,ItemClickListener clickListener) {
         this.context = context;
         this.jugadores = responseList;
         this.jugadoresEquipo = new ArrayList<>();
