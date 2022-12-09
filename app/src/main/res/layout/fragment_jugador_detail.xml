@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/ic_player_card"
-    tools:context=".ui.elementos.JugadorDetailFragment"
+    tools:context=".elementos.JugadorDetailFragment"
     app:layout_constraintBottom_toTopOf="@+id/nav_view"
     >
 

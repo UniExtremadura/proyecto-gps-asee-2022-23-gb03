@@ -1,6 +1,14 @@
 package es.unex.giiis.golaso.elementos;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +18,12 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.core.graphics.drawable.RoundedBitmapDrawable;
+import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,6 +34,13 @@ import es.unex.giiis.golaso.databinding.FragmentEquipoDetailBinding;
 import es.unex.giiis.golaso.model.Equipo;
 
 public class EquipoDetailFragment extends Fragment {
+import es.unex.giiis.golaso.MainActivity;
+import es.unex.giiis.golaso.R;
+import es.unex.giiis.golaso.databinding.FragmentEquipoDetailBinding;
+import es.unex.giiis.golaso.model.Equipo;
+import es.unex.giiis.golaso.ui.clasificacion.ClasificacionFragment;
+
+public class EquipoDetailFragment extends Fragment implements FragmentManager.OnBackStackChangedListener {
 
     private static final String ARG_PARAM1 = "nombre";
     private static final String ARG_PARAM2 = "ubicacion";
@@ -191,4 +212,8 @@ public class EquipoDetailFragment extends Fragment {
 
     }
 
+    @Override
+    public void onBackStackChanged() {
+
+    }
 }

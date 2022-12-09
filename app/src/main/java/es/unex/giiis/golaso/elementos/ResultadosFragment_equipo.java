@@ -16,6 +16,9 @@ import java.util.ArrayList;
 import es.unex.giiis.golaso.AppExecutors;
 import es.unex.giiis.golaso.R;
 import es.unex.giiis.golaso.api.equipos.EquiposNetworkLoaderRunnable;
+import es.unex.giiis.golaso.adapters.ResultadoEquipoAdapter;
+import es.unex.giiis.golaso.api.equipos.EquiposNetworkLoaderRunnable;
+import es.unex.giiis.golaso.api.partidos.PartidosNetworkLoaderRunnable;
 import es.unex.giiis.golaso.databinding.FragmentResultadosEquipoBinding;
 
 public class ResultadosFragment_equipo extends Fragment {
@@ -48,6 +51,16 @@ public class ResultadosFragment_equipo extends Fragment {
 
         binding = FragmentResultadosEquipoBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        ResultadoEquipoAdapter adapter = new ResultadoEquipoAdapter(this.getContext(), new ArrayList<>(), new ArrayList<>(), mIdEquipo);
+
+        recyclerPartidoView = root.findViewById(R.id.rVPartidosEquipo);
+        recyclerPartidoView.setHasFixedSize(true);
+        recyclerPartidoView.setLayoutManager(new LinearLayoutManager(this.getContext()));
+
+        AppExecutors.getInstance().networkIO().execute(new PartidosNetworkLoaderRunnable(partidos -> adapter.swapP(partidos)));
+        AppExecutors.getInstance().networkIO().execute(new EquiposNetworkLoaderRunnable(equipos -> adapter.swapE(equipos)));
+        recyclerPartidoView.setAdapter(adapter);
 
         return root;
     }

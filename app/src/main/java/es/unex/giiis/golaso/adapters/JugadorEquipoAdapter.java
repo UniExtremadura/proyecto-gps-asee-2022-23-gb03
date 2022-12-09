@@ -3,6 +3,10 @@ package es.unex.giiis.golaso.adapters;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -20,6 +24,7 @@ import java.util.Comparator;
 import java.util.List;
 
 import es.unex.giiis.golaso.R;
+import es.unex.giiis.golaso.model.Equipo;
 import es.unex.giiis.golaso.model.Jugador;
 
 public class JugadorEquipoAdapter extends RecyclerView.Adapter<JugadorEquipoAdapter.ViewHolder>{
@@ -27,21 +32,23 @@ public class JugadorEquipoAdapter extends RecyclerView.Adapter<JugadorEquipoAdap
     Context context;
     List<Jugador> jugadores;
     List<Jugador> jugadoresEquipo;
-    private final int idEquipo;
+    private final long idEquipo;
+
     SwitchCompat mSwitch;
+
     private ItemClickListener clickListener;
 
-    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, long idEquipo, SwitchCompat mSwitch, ItemClickListener clickListener) {
+    public JugadorEquipoAdapter(Context context, List<Jugador> responseList, long idEquipo, SwitchCompat mSwitch,ItemClickListener clickListener) {
         this.context = context;
         this.jugadores = responseList;
         this.jugadoresEquipo = new ArrayList<>();
-        this.idEquipo = (int)idEquipo;
+        this.idEquipo = idEquipo;
         this.mSwitch = mSwitch;
         this.clickListener = clickListener;
     }
 
     //busca los jugadores del equipo y los ordena por nombre
-    private void buscarJugadoresEquipo(int idEquipo) {
+    private void buscarJugadoresEquipo(long idEquipo) {
 
         for (Jugador j:jugadores) {
             if (j.getIdEquipo() == idEquipo) {
