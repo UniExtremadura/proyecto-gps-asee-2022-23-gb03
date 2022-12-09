@@ -26,12 +26,12 @@ public class ResultadosFragment_equipo extends Fragment {
     RecyclerView recyclerPartidoView;
 
     private static final String ARG_PARAM1 = "idEquipo";
-    private int mIdEquipo;
+    private long mIdEquipo;
 
-    public static ResultadosFragment_equipo newInstance(int idEquipo) {
+    public static ResultadosFragment_equipo newInstance(long idEquipo) {
         ResultadosFragment_equipo fragment = new ResultadosFragment_equipo();
         Bundle args = new Bundle();
-        args.putInt(ARG_PARAM1, idEquipo);
+        args.putLong(ARG_PARAM1, idEquipo);
         fragment.setArguments(args);
         return fragment;
     }
@@ -40,7 +40,7 @@ public class ResultadosFragment_equipo extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mIdEquipo = getArguments().getInt(ARG_PARAM1);
+            mIdEquipo = getArguments().getLong(ARG_PARAM1);
         }
     }
 
