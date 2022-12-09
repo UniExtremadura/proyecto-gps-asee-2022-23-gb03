@@ -41,7 +41,8 @@ public class ClasificacionFragment extends Fragment {
         tabClas.selectTab(tabClas.getTabAt(1));
 
         getChildFragmentManager().beginTransaction()
-                .replace(R.id.frameClas, new ClasificacionFragment_clasificacion())
+                .replace(R.id.frameClas, new ClasificacionFragment_clasificacion(), "clasificacion")
+                .addToBackStack(null)
                 .commit();
 
         tabClas.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -49,17 +50,20 @@ public class ClasificacionFragment extends Fragment {
             public void onTabSelected(TabLayout.Tab tab) {
                 if (tab.getPosition() == 0)
                     getChildFragmentManager().beginTransaction()
-                            .replace(R.id.frameClas, new ResultadosFragment_clasificacion())
+                            .replace(R.id.frameClas, new ResultadosFragment_clasificacion(), "resultados")
+                            .addToBackStack(null)
                             .commit();
 
                 if (tab.getPosition() == 1)
                     getChildFragmentManager().beginTransaction()
-                            .replace(R.id.frameClas, new ClasificacionFragment_clasificacion())
+                            .replace(R.id.frameClas, new ClasificacionFragment_clasificacion(), "clasificacion")
+                            .addToBackStack(null)
                             .commit();
 
                 if (tab.getPosition() == 2)
                     getChildFragmentManager().beginTransaction()
-                            .replace(R.id.frameClas, new GoleadoresFragment_clasificacion())
+                            .replace(R.id.frameClas, new GoleadoresFragment_clasificacion(), "goleadores")
+                            .addToBackStack(null)
                             .commit();
             }
 
