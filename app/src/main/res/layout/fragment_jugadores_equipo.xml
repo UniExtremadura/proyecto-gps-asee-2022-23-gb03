@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".elementos.JugadoresFragment_equipo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch1"
+            android:textStyle="bold"
+            android:background="@color/statusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="56dp"
+            android:paddingHorizontal="80dp"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Mostrar por posición"
+            android:checked="false" />
+
+        <FrameLayout
+            android:id="@+id/SeparadorPartidoEq"
+            android:layout_width="fill_parent"
+            android:layout_height="6dp"
+            android:background="@color/white" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_jug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:scrollbars="none"
+                android:overScrollMode="never" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

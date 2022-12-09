@@ -19,6 +19,7 @@ import es.unex.giiis.golaso.R;
 import es.unex.giiis.golaso.adapters.ClasificacionAdapter;
 import es.unex.giiis.golaso.api.equipos.EquiposNetworkLoaderRunnable;
 import es.unex.giiis.golaso.databinding.FragmentClasificacionClasificacionBinding;
+import es.unex.giiis.golaso.elementos.EquipoDetailFragment;
 import es.unex.giiis.golaso.model.Equipo;
 
 public class ClasificacionFragment_clasificacion extends Fragment implements ClasificacionAdapter.ItemClickListener{
@@ -59,6 +60,14 @@ public class ClasificacionFragment_clasificacion extends Fragment implements Cla
 
     @Override
     public void onItemClick(Equipo equipo) {
-        //equipo detail
+
+        Fragment fragment = EquipoDetailFragment.
+                newInstance(equipo);
+
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frameContainer_clas, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
     }
 }
