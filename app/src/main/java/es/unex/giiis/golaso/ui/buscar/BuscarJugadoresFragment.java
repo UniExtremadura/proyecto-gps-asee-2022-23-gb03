@@ -23,9 +23,6 @@ public class BuscarJugadoresFragment extends Fragment {
         binding = FragmentBuscarJugadoresBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textBuscarJugadores;
-        textView.setText("Este es el BuscarJugadoresFragment");
-
         return root;
 
     }
