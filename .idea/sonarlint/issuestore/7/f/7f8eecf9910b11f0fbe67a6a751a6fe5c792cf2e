@@ -1,0 +1,15 @@
+
+c
+java:S1192["HDefine a constant instead of duplicating this literal "#82f7a0" 4 times.(îßœ„üÿÿÿÿ
+_
+java:S1192]"IDefine a constant instead of duplicating this literal "#ffffff" 10 times.(Å©©‡
+^
+java:S2259C"CA "NullPointerException" could be thrown; "local" is nullable here.(§Ğœñùÿÿÿÿ
+]
+java:S2259J"GA "NullPointerException" could be thrown; "visitante" is nullable here.(¯¾·
+m
+java:S37768"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(¬‚çÃıÿÿÿÿ
+e
+java:S1659¥"IDeclare "tVGolesLocal" and all following declarations on a separate line.(óóé¤ûÿÿÿÿ
+@
+java:S1659¦")Declare "iVEquipoVis" on a separate line.(–¦È‡

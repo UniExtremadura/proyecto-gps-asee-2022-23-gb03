@@ -1,0 +1,17 @@
+
+k
+java:S1104""UMake mListener a static final constant or non-public and provide accessors if needed.(ıÙÆÑ
+v
+java:S1104*"[Make mTextViewNombre a static final constant or non-public and provide accessors if needed.(¾Ç¡’ÿÿÿÿÿ
+u
+java:S1104+"_Make mTextViewEntrenador a static final constant or non-public and provide accessors if needed.(ğıÈâ
+s
+java:S1104,"]Make mTextViewPosicion a static final constant or non-public and provide accessors if needed.(øŠ½ù
+l
+java:S1104-"VMake mImageView a static final constant or non-public and provide accessors if needed.(’…Ş¦
+l
+java:S1104/"QMake mView a static final constant or non-public and provide accessors if needed.(ïÍíÜıÿÿÿÿ
+g
+java:S11040"QMake mItem a static final constant or non-public and provide accessors if needed.(èôØ
+G
+java:S1602i",Remove useless curly braces around statement(ÕÕ•©ÿÿÿÿÿ

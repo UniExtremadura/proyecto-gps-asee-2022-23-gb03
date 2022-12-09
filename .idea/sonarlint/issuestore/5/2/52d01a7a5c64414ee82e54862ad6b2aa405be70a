@@ -1,0 +1,13 @@
+
+c
+java:S11929"HDefine a constant instead of duplicating this literal "#FFFFFF" 4 times.(ëåƒøÿÿÿÿ
+k	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÃããûÿÿÿÿ
+>
+java:S1604d"(Make this anonymous inner class a lambda(Ö¹™º
+M
+java:S2589."7Remove this expression which always evaluates to "true"(¸‹–¸
+1
+java:S3626l"Remove this redundant jump.(ûÁİ…
+6	java:S1316""Add a default case to this switch.(ÊŸ®&
+f
+java:S1659}"KDeclare "tVNombreEquipo" and all following declarations on a separate line.(É‘Öşÿÿÿÿ

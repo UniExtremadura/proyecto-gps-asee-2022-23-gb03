@@ -13,6 +13,11 @@
         android:icon="@drawable/ic_favoritos"
         />
     <item
+        android:title="@string/icon_buscar"
+        android:id="@+id/nav_buscar"
+        android:icon="@drawable/ic_search"
+        />
+    <item
         android:title="@string/icon_clasificacion"
         android:id="@+id/nav_table"
         android:icon="@drawable/ic_clasificacion"

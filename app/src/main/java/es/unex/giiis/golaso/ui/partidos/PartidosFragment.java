@@ -10,17 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
-import es.unex.giiis.golaso.AppExecutors;
-import es.unex.giiis.golaso.adapters.BuscarEquiposAdapter;
-import es.unex.giiis.golaso.api.equipos.EquiposNetworkLoaderRunnable;
 import es.unex.giiis.golaso.databinding.FragmentPartidosBinding;
 
 public class PartidosFragment extends Fragment {
 
     private FragmentPartidosBinding binding;
-    private BuscarEquiposAdapter mAdapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,

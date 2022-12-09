@@ -1,92 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/rLclasJug">
+    tools:context=".ui.clasificacion.GoleadoresFragment_clasificacion">
 
-    <TableLayout
-        android:id="@+id/tablaClasJug"
+    <TextView
+        android:id="@+id/textGoleadoresClasificacion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:stretchColumns="2"
-        tools:context=".ui.clasificacion.GoleadoresFragment_clasificacion">
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TableRow
-            android:id="@+id/CabeceraJug"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#0A0E29"
-            android:paddingVertical="2dp">
-
-            <TextView
-                android:id="@+id/ColumnaPosJug"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:layout_marginHorizontal="10dp"
-                android:text="POS"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/ColumnaJugador"
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:layout_column="2"
-                android:layout_marginHorizontal="10dp"
-                android:text="JUGADOR"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/ColumnaGoles"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:text="G"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/ColumnaAsistencias"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="4"
-                android:text="A"
-                android:textColor="@color/white"
-                android:textSize="15sp" />
-
-        </TableRow>
-
-        <TableRow
-            android:id="@+id/SeparadorCabeceraJug"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content">
-
-            <FrameLayout
-                android:id="@+id/LineaCabeceraJug"
-                android:layout_width="fill_parent"
-                android:layout_height="2dp"
-                android:layout_span="7"
-                android:background="@color/black"/>
-        </TableRow>
-
-        <LinearLayout
-            android:id="@+id/wrapperJug"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rVClasJug"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"/>
-        </LinearLayout>
-
-    </TableLayout>
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,10 +1,10 @@
 <resources>
-
     <string name="app_name">Golaso</string>
     <string name="icon_fav">Favoritos</string>
     <string name="icon_clasificacion">Clasificación</string>
     <string name="icon_perfil">Perfil</string>
     <string name="icon_partidos">Partidos</string>
+    <string name="icon_buscar">Buscar</string>
     <string name="title_search">Búsqueda</string>
     <string name="title_fav">Favoritos</string>
     <string name="title_profile">Perfil</string>
@@ -17,7 +17,7 @@
     <string name="rank">Posición:</string>
     <string name="team">Equipo:</string>
     <string name="stadium">Estadio:</string>
-    <string name="accesPos">Posición de acceso:</string>
+    <string name="accesPos">Posición:</string>
     <string name="team_details">Detalles del equipo</string>
     <string name="statistics">Estadísticas</string>
     <string name="gc">Goles en contra:</string>
@@ -38,16 +38,25 @@
     <string name="playerPos">Posición:</string>
     <string name="player">Jugador</string>
     <string name="Team">Equipo</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Contraseña</string>
-    <string name="action_sign_in">Iniciar sesión o registrate</string>
-    <string name="action_sign_in_short">Iniciar sesión</string>
-    <string name="welcome">Bienvenido</string>
-    <string name="invalid_username">Nombre de usuario no válido</string>
-    <string name="invalid_password">La contraseña ha de tener más de 5 caracteres</string>
-    <string name="login_failed">Inicio de sesión fallido</string>
+    <string name="SearchPlayer">Buscar jugador</string>
+    <string name="SearchTeam">Buscar equipo</string>
+    <string name="PlayerInfo">Información del jugador</string>
+    <string name="PlayerPos">Posición:</string>
+    <string name="PlayerG">Goles:</string>
+    <string name="PlayerA">Asistencias:</string>
+    <string name="PlayerAge">Edad:</string>
+    <string name="PlayerYear">Año de nacimiento:</string>
+    <string name="PlayerPJ">Partidos jugados:</string>
+    <string name="PlayerCountry">País:</string>
+    <string name="ShareTeam">Compartir equipo</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="settings_theme_key">Tema</string>
+    <string name="settings_fragment_tab">ajustes_fragmento_tab</string>
+    <string name="settings_theme_title">Elegir tema</string>
+    <string name="settings_theme_dialog_title">Elegir tema</string>
+    <string name="settings_toolbar">Ajustes</string>
     <string name="icon_login">Iniciar sesión</string>
     <string name="icon_modificar_perfil">Modificar Perfil</string>
-    <string name="action_settings">Ajustes</string>
-
+    <string name="edit_user">Usuario</string>
+    <string name="edit_password">Contrasena</string>
 </resources>
