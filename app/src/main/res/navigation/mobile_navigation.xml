@@ -26,7 +26,11 @@
         android:id="@+id/nav_profile"
         android:name="es.unex.giiis.golaso.ui.perfil.PerfilFragment"
         android:label="@string/icon_perfil"
-        tools:layout="@layout/fragment_perfil"/>
+        tools:layout="@layout/fragment_perfil">
+        <action
+            android:id="@+id/action_nav_profile_to_nav_modificar_perfil"
+            app:destination="@id/nav_modificar_perfil" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_buscar"

@@ -42,11 +42,6 @@ public class PerfilFragment extends Fragment {
         buttonLogout = (Button) root.findViewById(R.id.buttonLogout);
         buttonEdit = (Button) root.findViewById(R.id.buttonEdit);
 
-        getParentFragmentManager().setFragmentResultListener("requestKey", this, (requestKey, result) -> {
-            String email = result.getString("email");
-            user_email.setText(email);
-        });
-
         /*buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,12 +49,12 @@ public class PerfilFragment extends Fragment {
             }
         });*/
 
-        /*buttonEdit.setOnClickListener(new View.OnClickListener() {
+        buttonEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(root).navigate(R.id.action_nav_profile_to_nav_modificar_perfil);
             }
-        });*/
+        });
 
         return root;
 

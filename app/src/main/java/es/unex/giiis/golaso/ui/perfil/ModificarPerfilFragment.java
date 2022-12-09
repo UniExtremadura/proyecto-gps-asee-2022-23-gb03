@@ -48,6 +48,7 @@ public class ModificarPerfilFragment extends Fragment {
                 SharedPreferences.Editor editor = sharedPref.edit();
                 editor.putString(getString(R.string.edit_user), modify_user.getText().toString());
                 editor.putString(getString(R.string.edit_password), modify_password.getText().toString());
+                editor.apply();
                 Navigation.findNavController(root).navigate(R.id.action_nav_modificar_perfil_to_nav_profile);
             }
         });
