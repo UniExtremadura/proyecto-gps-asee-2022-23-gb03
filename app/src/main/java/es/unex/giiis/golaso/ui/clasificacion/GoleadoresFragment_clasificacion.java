@@ -19,6 +19,7 @@ import es.unex.giiis.golaso.R;
 import es.unex.giiis.golaso.adapters.GoleadorAdapter;
 import es.unex.giiis.golaso.api.jugadores.JugadoresNetworkLoaderRunnable;
 import es.unex.giiis.golaso.databinding.FragmentGoleadoresClasificacionBinding;
+import es.unex.giiis.golaso.elementos.JugadorDetailFragment;
 import es.unex.giiis.golaso.model.Jugador;
 
 public class GoleadoresFragment_clasificacion extends Fragment implements GoleadorAdapter.ItemClickListener {
@@ -61,7 +62,17 @@ public class GoleadoresFragment_clasificacion extends Fragment implements Golead
 
     @Override
     public void onItemClick(Jugador jugador) {
-        //jugador detail
+
+        Fragment fragment = JugadorDetailFragment
+                .newInstance(jugador.getNombre(), jugador.getPais(), jugador.getPosicion(), jugador.getEquipo(), jugador.getFoto(),
+                        jugador.getIdJugador(), jugador.getGoles(), jugador.getAsistencias(), jugador.getPartidosJugados(),
+                        jugador.getAñoNac(), jugador.getEdad());
+
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.frameContainer_clas, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+
     }
 
 }
