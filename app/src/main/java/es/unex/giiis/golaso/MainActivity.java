@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import es.unex.giiis.golaso.databinding.ActivityMainBinding;
 import es.unex.giiis.golaso.ui.ajustes.AjustesActivity;
@@ -34,6 +35,20 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+
+            if (destination.getId() == R.id.nav_login) {
+
+                binding.navView.setVisibility(View.GONE);
+
+            } else {
+
+                binding.navView.setVisibility(View.VISIBLE);
+
+            }
+        });
+
 
     }
     public void onRestart() {
