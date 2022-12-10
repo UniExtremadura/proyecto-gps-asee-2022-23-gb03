@@ -87,7 +87,7 @@ public class TestCU10_ConsultarClasificacion {
         Thread.sleep(1000);
 
     }
-
+//    @Test
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
 
