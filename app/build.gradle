@@ -36,6 +36,7 @@ dependencies {
 
     // Uso de Room
     implementation "androidx.room:room-runtime:2.4.3"
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0'
     annotationProcessor "androidx.room:room-compiler:2.4.3"
     testImplementation "androidx.room:room-testing:2.4.3"
 
@@ -50,6 +51,9 @@ dependencies {
 
     // Uso de Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
+
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
 
     // Cosas android
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
@@ -66,5 +70,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.4'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
 
 }
