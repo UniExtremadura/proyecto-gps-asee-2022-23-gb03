@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace 'es.unex.giiis.golaso'
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "es.unex.giiis.golaso"
         minSdk 27
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -34,9 +34,8 @@ android {
 
 dependencies {
 
-    // Uso de Room
+    // Uso de ROOM
     implementation "androidx.room:room-runtime:2.4.3"
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.0'
     annotationProcessor "androidx.room:room-compiler:2.4.3"
     testImplementation "androidx.room:room-testing:2.4.3"
 
@@ -51,9 +50,7 @@ dependencies {
 
     // Uso de Picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
-    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
-
-    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
+    implementation 'androidx.test.espresso:espresso-contrib:3.5.1'
 
     // Cosas android
     implementation 'androidx.viewpager2:viewpager2:1.0.0'
@@ -67,10 +64,9 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.5.3'
     implementation 'androidx.preference:preference:1.2.0'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
 
-    implementation 'androidx.test.espresso:espresso-contrib:3.5.0'
 
 }
